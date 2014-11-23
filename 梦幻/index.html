@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>梦幻西游2</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }  
+ a:link{     
+        text-decoration: none;
+        color: #000;
+    } 
+body {
+            font-family: "Microsoft YaHei",simSun,Arial;
+            line-height: 170%;
+            font-size: 12px;
+            color: #000;
+             }
+#wrap{    
+            background:url(img/bg1.jpg)  repeat-y 50% 0;
+            overflow:hidden;
+             }
+#bg1{
+	background:url(img/bg01.jpg) no-repeat 50% 0;
+	width: 100%;
+          float: left;
+           
+              }
+#bg2{
+	background:url(img/bg02.jpg) no-repeat 50% 323px;
+	width: 100%;
+          float: left;          
+              }
+#bg3{
+	background:url(img/bg03.jpg) no-repeat 50% bottom;
+	width: 100%;
+          float: left;  
+              }*
+#main{
+           width: 960px;
+	position: relative;	
+	margin: 0 auto 100px;		
+}
+#header{
+	position: inherit;
+	height: 345px;
+}
+#center{
+	position: inherit;	
+	background:url(img/bg04.jpg) no-repeat 5px bottom;
+}
+#footer{
+           height: 90px;   
+           clear: both;     
+}
+#search{
+	background: url(img/bg-sousuo.png) no-repeat ;
+	width: 328px;
+	height: 41px;
+	position: absolute;
+	bottom: 2px;
+           right: 48px;	
+}
+.sousuo1{
+          position:absolute;
+          bottom:13px;
+          left:5%;
+}
+.sousuo2{
+          width:128px;
+          position:absolute;
+          bottom:13px;
+          right:27.5%;
+}
+.sousuo3{
+          position:absolute;
+          bottom:10.7px;
+          right:6.5%;
+      }
+#items-box{
+	 overflow: hidden;
+            width: 930px;
+            margin: 40px auto;
+            padding-top: 30px;
+            margin-bottom: 35px; 
+}
+#items-box .items{
+	 float: left;
+            padding: 10px 40px 0;
+            height: 100px;
+            overflow: hidden;
+}
+#news{
+	width: 240px;
+}
+#tools{
+	width:150px;
+}
+#focus{
+	width:295px;
+}
+#news li{   
+           list-style: none;
+           overflow: hidden;
+           height: 20px;
+           color: #fff;
+           line-height: 20px;
+}
+#news li a{
+           width: 150px;
+           float: left;
+           overflow: hidden;
+           padding-right: 8px;
+           color: #fff;
+           text-decoration:none;
+}
+#tools li{
+           overflow: hidden;
+           width: 230px;
+           list-style: none;
+}
+#tools li a{
+	color: #fff;
+}
+#tools p {
+	text-align: right;
+}
+#tools p a {
+	color: #64fdf4;
+             text-decoration: none;
+             font-weight: bold;
+}
+#focus .bigger{
+           font-size: 18px;
+           color: #fff;
+}
+#focus p a {
+	font-size: 14px;
+             padding-right: 6px;
+             text-decoration: underline;
+            color: #cef2ff;
+            white-space: nowrap;
+}
+#mulu{
+    position: static;
+    background: url(img/mulu.png) no-repeat ;
+    width: 904px;
+    height: 41px;
+    padding: 0 8px;
+    margin-left: 23px;
+}
+#mulu ul{
+    height: 39px;
+}
+#mulu li{
+    float: left;
+    width: 90px;
+    height: 100%;
+    list-style: none;
+}
+#mulu li a :hover{
+	background-image:url(img/01.jpg);
+}
+#main2{
+    margin-top: 12px;
+    padding-bottom: 30px; 
+}
+.m-item{
+    margin-left: 23px;
+}
+h2{
+    color: #fff;
+    height: 50px;
+    background: url(img/m-bg.gif) no-repeat 2px 12px;
+}
+.m-d{
+    background:#fff url(img/divbg.jpg) no-repeat 0 bottom;
+    width: 884px;
+    font-family: simSun;
+    padding: 12px 18px 10px;
+}
+table {width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.t-d{
+    color: #1E5FCA;
+    font-weight: 700;
+    width: 10%;
+    text-align: left;
+    vertical-align: top;
+}
+td{
+    text-decoration:none;
+    color: #000;
+    width: 90%;    
+    height: 24px;
+    vertical-align: top;
+}
+#mulu span{
+	width: 90px;
+	height: 100%;
+	float: left;
+}
+      </style>
+</head>
+<body>
+    <div id="wrap">
+    	<div id="bg1">
+    		<div id="bg2">
+    			<div id="bg3">
+    				<div id="main">
+    					<div id="header">
+    						<div id="top">
+    							<object data="http://res.xyq.netease.com/gw/10v1/swf/navigation_20111230.swf" type="application/x-shockwave-flash" id="flash_596069225" width="929" height="150">
+    								<param name="wmode" value="transparent">
+    								<param name="allowScriptAccess" value="always">
+    								<param name="movie" value="http://res.xyq.netease.com/gw/10v1/swf/navigation_20111230.swf">
+    							</object>   						
+    						</div>
+    						<div id="search">
+    							<select class="sousuo1">  						
+				                                                <option value="1">页内搜索</option>
+				                                                <option value="2">梦幻百科</option>
+			                                                </select>			
+			                                                <input class="sousuo2" type="text"   placeholder="此处输入关键字">
+			                                                <input class="sousuo3"type="submit"  value="搜索" />
+    						</div>
+    					</div>
+    					<div id="center">
+    						<div id="items-box">
+    							<div id="news" class="items">
+    								<ul>
+    									<li>
+    										<a href="http://xyq.163.com/introduce/2013/1/11/5032_357133.html" >妙法慧心</a>
+    										<span>[2012-11-30]</span>
+    									</li>
+    									<li>
+    										<a href="http://xyq.163.com/introduce/2013/1/10/5033_348617.html"  >普渡捉鬼</a>
+    										<span>[2013-01-01]</span>
+    									</li>
+    									<li>
+    										<a href="http://xyq.163.com/introduce/sys/2012/12/14/5031_353453.html"  >老玩家回归</a>
+    										<span>[2012-12-30]</span>
+    									</li>
+    									<li>
+    										<a href="http://xyq.163.com/introduce/2012/10/29/5032_347957.html"  >天籁之音</a>
+    										<span>[2012-12-16]</span>
+    									</li>
+    								</ul>
+    							</div>
+    							<div id="tools" class="items">
+    								<ul>
+    									<li><a  href="http://xyq.163.com/tools/index.html" >梦幻工具箱网页版</a></li>
+    									<li><a  href="http://xyq.163.com/bizhisc/" >《梦幻西游》壁纸自动生成器</a></li>
+    									<li><a  href="http://xyq.163.com/ku/cjx/" >《梦幻西游》成就秀模拟器</a></li>
+    									<li><a  href="http://xyq.163.com/2011/zhuanyi/search.html" >梦幻转区查询</a></li>
+    								</ul>
+    								<p><a href="http://xyq.163.com/skill/tools.html">更多<<</a></p>
+    							</div>
+    							<div id="focus" class="items">
+    								<p>
+    								<a href="" class="bigger">专区查询</a>
+    								<a href="">乾坤盘</a>
+    								<a href="" class="bigger">锦衣</a>
+    								<a href="">日历活动</a>
+    								<a href="">孩子养育</a>
+    								<a href="">副本</a>
+    				             			<a href="">符石</a>
+    								<a href="" class="bigger">壁纸生成器</a>
+    								<a href="">祥瑞</a>
+    								<a href="">潮流玩法</a>
+    								<a href="">奇经八脉</a>
+    								<a href="">成就秀</a>
+    								<a href=""class="bigger">更多</a>
+    								</p>
+    							</div>
+    							
+    						</div>
+                                                                  <div id="mulu">
+                                                                             <ul >
+                                                                                 <li><a href="#youxi"><span></span></a></li>
+                                                                                 <li><a href="#xitong"><span></span></a></li>
+                                                                                 <li><a href="#huodong"><span></span></a></li>
+                                                                                 <li><a href="#xinxi"><span></span></a></li>
+                                                                                 <li><a href="#gongju"><span></span></a></li>
+                                                                                 <li><a href="#zhuangbei"><span></span></a></li>
+                                                                                 <li><a href="#jineng"><span></span></a></li>
+                                                                                 <li><a href="#zhandou"><span></span></a></li>
+                                                                                 <li><a href="#zhaohuan"><span></span></a></li>
+                                                                                 <li><a href="#renwu"><span></span></a></li>
+                                                                             </ul>                                     
+                                                                  </div>
+                                                                  <div id="main2">
+                                                                           <div id="youxi" class="m-item">
+                                                                               <h2><img src="img/t_youxi.gif"/></h2>
+                                                                               <div class="m-d">
+                                                                                         <table>
+                                                                                             <tbody>
+                                                                                                 <tr>
+                                                                                                     <td class="t-d">游戏介绍：</td>
+                                                                                                     <td >
+| <a href="http://xyq.163.com/introduce/js001.html" class="" target="_blank">背景故事</a>
+| <a href="http://xyq.163.com/introduce/js002.html" class="" target="_blank">世界介绍</a>
+| <a href="http://xyq.163.com/mp001.html" class="" target="_blank">十五门派</a>
+| <a href="http://xyq.163.com/js003.html" class="" target="_blank">游戏角色</a>
+| <a href="http://xyq.163.com/introduce/js004.html" class="" target="_blank">游戏特色</a>
+| <a href="http://xyq.163.com/introduce/js005.html" class="" target="_blank">画面风格</a>
+                                                                                                    </td>
+                                                                                                 </tr>
+                                                                                                 <tr>
+                                                                                                     <td class="t-d">游戏前提：</td>
+                                                                                                     <td>                                                       
+| <a href="http://xyq.163.com/introduce/newcomer/2013/7/24/5021_384031.html" class="" target="_blank">玩家守则</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt002.html" class="" target="_blank">服务条款</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt003.html" class="" target="_blank">配置说明</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt004.html" class="" target="_blank">下载安装</a>
+| <a href="http://xyq.163.com/introduce/newcomer/mend.html" class="" target="_blank">游戏补丁使用方法</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt005.html" class="" target="_blank">注册说明</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt006.html" class="" target="_blank">收费与充值</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt007.html" class="" target="_blank">用户协议</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt008.html" class="" target="_blank">界面说明</a>
+| <a href="http://xyq.163.com/introduce/newcomer/qt009.html" class="" target="_blank">特殊服务器</a>
+                                                                                                     </td>
+                                                                                                 </tr>
+                                                                                                 <tr>
+                                                                                                     <td class="t-d">新手上路</td>
+                                                                                                     <td>                                   
+| <a href="http://xyq.163.com/introduce/newcomer/2013/6/27/5010_378823.html" class="" target="_blank">新手礼包</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs001.html" class="" target="_blank">登陆游戏</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs002.html" class="" target="_blank">角色创建</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs003.html" class="" target="_blank">基本操作</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs012.html" class="" target="_blank">梦幻指引</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs004.html" class="" target="_blank">系统设置</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs005.html" class="" target="_blank">快捷键</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs006.html" class="" target="_blank">常见问题</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs007.html" class="" target="_blank">点数分配</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs008.html" class="" target="_blank">新手返点</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs009.html" class="" target="_blank">门派称谓</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs010.html" class="" target="_blank">录像播放</a>
+| <a href="http://xyq.163.com/introduce/newcomer/xs011.html" class="" target="_blank">游戏时辰</a>
+                                                                                                     </td>
+                                                                                                 </tr>
+                                                                                                 <tr>
+                                                                                                     <td class="t-d">资料片</td>
+                                                                                                     <td>
+| <a href="http://xyq.163.com/2014/ysqb/" class="" target="_blank">异兽奇兵</a>
+| <a href="http://xyq.163.com/activity/fanshome/home.html" class="" target="_blank">欢乐家园</a>
+| <a href="http://xyq.163.com/activity/sgxj/bj.html" class="" target="_blank">神鬼玄机</a>
+| <a href="http://xyq.163.com/activity/beaulife/" class="" target="_blank">美丽人生</a>
+| <a href="http://xyq.163.com/activity/hj/" class="" target="_blank">梦幻化境</a>
+| <a href="http://xyq.163.com/activity/q2/tm/" class="" target="_blank">天命之战</a>
+| <a href="http://xyq.163.com/2007/bz/index.html" class="" target="_blank">宝藏</a>
+| <a href="http://xyq.163.com/2007/fbcq/index.html" class="" target="_blank">法宝传奇</a>
+| <a href="http://xyq.163.com/2008/zqtx/" class="" target="_blank">坐骑天下</a>
+| <a href="http://xyq.163.com/2009/sgsf/" class="" target="_blank">上古神符</a>
+| <a href="http://xyq.163.com/2011/csrh/" class="" target="_blank">出神入化</a>
+| <a href="http://xyq.163.com/2011/gcmj/" class="" target="_blank">功成名就</a>
+| <a href="http://xyq.163.com/2012/dscj/" class="" target="_blank">点石成金</a>
+                                                                                                     </td>
+                                                                                                 </tr>
+                                                                                                 <tr>
+                                                                                                     <td class="t-d">全新世代</td>
+                                                                                                     <td>
+| <a href="http://xyq.163.com/mh2/" class="" target="_blank">梦幻西游2</a>
+| <a href="http://xyq.163.com/2014/tyjw/" class="" target="_blank">腾云驾雾</a>
+                                                                                                     </td>
+                                                                                                 </tr>
+                                                                                             </tbody>
+                                                                                         </table>       
+                                                                               </div>
+                                                                           </div>
+
+                                                                           <div id="xitong" class="m-item">
+                                                                               <h2><img src="img/t_xitong.gif"></h2>
+                                                                            <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">聊天系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/lt001.html" class="" target="_blank">聊天命令</a>
+| <a href="http://xyq.163.com/introduce/sys/lt002.html" class="" target="_blank">表情动画</a>
+| <a href="http://xyq.163.com/introduce/sys/lt003.html" class="" target="_blank">表情语言</a>
+| <a href="http://xyq.163.com/introduce/sys/lt004.html" class="" target="_blank">表情动作</a>
+| <a href="http://xyq.163.com/introduce/sys/lt005.html" class="" target="_blank">交识朋友</a>
+| <a href="http://xyq.163.com/introduce/sys/lt006_5.html" class="" target="_blank">购买表情</a>
+| <a href="http://xyq.163.com/introduce/sys/lt008.html" class="" target="_blank">好友聊天</a>
+| <a href="http://xyq.163.com/introduce/sys/2012/10/8/5023_345401.html" class="" target="_blank">语音聊天</a>
+| <a href="http://xyq.163.com/introduce/sys/lt007.html" class="" target="_blank">好友群聊</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">商业系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/2014/6/6/5024_443469.html" class="" target="_blank">神秘拍卖会</a>
+| <a href="http://xyq.163.com/introduce/sys/2014/5/29/5024_442185.html" class="" target="_blank">跨服购买</a>
+| <a href="http://xyq.163.com/introduce/sys/sy001.html" class="" target="_blank">摆摊</a>
+| <a href="http://xyq.163.com/introduce/sys/sy002.html" class="" target="_blank">开店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy003.html" class="" target="_blank">药店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy005.html" class="" target="_blank">中介</a>
+| <a href="http://xyq.163.com/introduce/sys/sy006.html" class="" target="_blank">商人</a>
+| <a href="http://xyq.163.com/introduce/sys/sy007.html" class="" target="_blank">杂货店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy008.html" class="" target="_blank">福寿店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy009.html" class="" target="_blank">服饰店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy010.html" class="" target="_blank">乐坊</a>
+| <a href="http://xyq.163.com/introduce/sys/sy011.html" class="" target="_blank">钱庄</a>
+| <a href="http://xyq.163.com/introduce/sys/sy012.html" class="" target="_blank">武器店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy013.html" class="" target="_blank">当铺</a>
+| <a href="http://xyq.163.com/introduce/sys/sy014.html" class="" target="_blank">酒店</a>
+| <a href="http://xyq.163.com/introduce/sys/sy015.html" class="" target="_blank">股票系统</a>
+| <a href="http://xyq.163.com/introduce/sys/sy001_1.html" class="" target="_blank">替身货郎</a>
+| <a href="http://xyq.163.com/introduce/sys/sy016.html" class="" target="_blank">仙玉系统</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">帮派系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/2014/8/4/5025_454465.html" class="" target="_blank">新手帮派</a>
+| <a href="http://xyq.163.com/introduce/sys/bp001.html" class="" target="_blank">帮派建立</a>
+| <a href="http://xyq.163.com/introduce/sys/bp002.html" class="" target="_blank">帮派属性</a>
+| <a href="http://xyq.163.com/introduce/sys/bp003.html" class="" target="_blank">自建地图</a>
+| <a href="http://xyq.163.com/introduce/sys/bp004.html" class="" target="_blank">帮派内政</a>
+| <a href="http://xyq.163.com/introduce/sys/bp005.html" class="" target="_blank">技能研究</a>
+| <a href="http://xyq.163.com/introduce/sys/bp006.html" class="" target="_blank">结盟和帮派战争</a>
+| <a href="http://xyq.163.com/introduce/sys/2013/7/15/5025_381987.html" class="" target="_blank">帮派竞赛</a>
+                                                                                       </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">婚姻系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/hy001.html" class="" target="_blank">关于婚姻</a>
+| <a href="http://xyq.163.com/introduce/sys/hy002.html" class="" target="_blank">征婚求婚</a>
+| <a href="http://xyq.163.com/introduce/sys/hy003.html" class="" target="_blank">夫妻技能</a>
+| <a href="http://xyq.163.com/introduce/sys/hy004.html" class="" target="_blank">夫妻任务</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">子嗣系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/jia007.html" class="" target="_blank">子女养育</a>
+| <a href="http://xyq.163.com/2012sptsy/zscz.html" class="" target="_blank">六艺修行</a>
+| <a href="http://xyq.163.com/introduce/sys/qt006.html" class="" target="_blank">子嗣过继</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">玩家之家：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/2014/3/24/5027_429271.html" class="" target="_blank">家宴玩法</a>
+| <a href="http://xyq.163.com/introduce/sys/2013/7/15/5027_381997.html" class="" target="_blank">家居布局</a>
+| <a href="http://xyq.163.com/introduce/sys/jia001.html" class="" target="_blank">家的构成</a>
+| <a href="http://xyq.163.com/introduce/sys/jia002.html" class="" target="_blank">房屋属性</a>
+| <a href="http://xyq.163.com/introduce/sys/jia003.html" class="" target="_blank">房屋建造</a>
+| <a href="http://xyq.163.com/introduce/sys/jia004.html" class="" target="_blank">房屋交易</a>
+| <a href="http://xyq.163.com/introduce/sys/jia006.html" class="" target="_blank">住房婚姻</a>
+| <a href="http://xyq.163.com/introduce/sys/2012/8/3/5027_337983.html" class="" target="_blank">房屋专长</a>
+| <a href="http://xyq.163.com/introduce/sys/jia008.html" class="" target="_blank">庭院</a>
+| <a href="http://xyq.163.com/introduce/sys/jia009.html" class="" target="_blank">牧场</a>
+| <a href="http://xyq.163.com/introduce/sys/jia010.html" class="" target="_blank">踩脚印</a>
+| <a href="http://xyq.163.com/introduce/sys/2012/8/3/5027_337981.html" class="" target="_blank">风水提升</a>
+| <a href="http://xyq.163.com/introduce/sys/2012/8/3/5027_337979.html" class="" target="_blank">房屋扩建</a>
+| <a href="http://xyq.163.com/introduce/sys/2012/8/3/5027_337989.html" class="" target="_blank">房屋评选</a>
+| <a href="http://xyq.163.com/introduce/sys/2013/3/4/5027_362903.html" class="" target="_blank">房屋庭院</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">武 神 坛：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/wst001.html" class="" target="_blank">背景故事</a>
+| <a href="http://xyq.163.com/introduce/sys/wst002.html" class="" target="_blank">准备阶段</a>
+| <a href="http://xyq.163.com/introduce/sys/wst003.html" class="" target="_blank">比赛阶段</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">法宝系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/fb001.html" class="" target="_blank">法宝概述</a>
+| <a href="http://xyq.163.com/introduce/sys/fb002.html" class="" target="_blank">法宝效果</a>
+| <a href="http://xyq.163.com/introduce/sys/fb003.html" class="" target="_blank">使用法宝</a>
+| <a href="http://xyq.163.com/introduce/sys/fb004.html" class="" target="_blank">获得法宝</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">贺彩系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/hc001.html" class="" target="_blank">关于贺彩</a>
+| <a href="http://xyq.163.com/introduce/sys/hc001.html#1" class="" target="_blank">公共贺彩</a>
+| <a href="http://xyq.163.com/introduce/sys/hc001.html#2" class="" target="_blank">私人贺彩</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">坐骑系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/2008/zqtx/changjing.html" class="" target="_blank">坐骑获得</a>
+| <a href="http://xyq.163.com/2008/zqtx/zuoqi_jineng.html" class="" target="_blank">坐骑技能</a>
+| <a href="http://xyq.163.com/2008/zqtx/zuoqi_use.html" class="" target="_blank">坐骑属性</a>
+| <a href="http://xyq.163.com/2008/zqtx/zuoqi_ranse.html" class="" target="_blank">坐骑装饰</a>
+| <a href="http://xyq.163.com/2008/zqtx/zuoqi_xiangrui.html" class="" target="_blank">祥瑞</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">其他系统：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/sys/2014/3/21/5031_429163.html" class="" target="_blank">招式效果</a>
+| <a href="http://xyq.163.com/introduce/sys/qt001.html" class="" target="_blank">师徒系统</a>
+| <a href="http://xyq.163.com/introduce/sys/qt002.html" class="" target="_blank">结拜系统</a>
+| <a href="http://xyq.163.com/introduce/sys/qt003.html" class="" target="_blank">图鉴系统</a>
+| <a href="http://xyq.163.com/introduce/sys/qt004.html" class="" target="_blank">换装系统</a>
+| <a href="http://xyq.163.com/introduce/sys/qt005.html" class="" target="_blank">社区系统</a>
+| <a href="http://xyq.163.com/introduce/sys/qt007.html" class="" target="_blank">属性点切换</a>
+| <a href="http://xyq.163.com/introduce/sys/qt008.html" class="" target="_blank">装备切换</a>
+| <a href="http://xyq.163.com/introduce/sys/sy016_2.html" class="" target="_blank">游戏内周边商城</a>
+| <a href="http://xyq.163.com/2011/csrh/jinyi.html" class="" target="_blank">锦衣系统</a>
+| <a href="http://xyq.163.com/introduce/sys/2012/12/14/5031_353453.html" class="" target="_blank">老玩家回归</a>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                           </div>   
+                                                                       </div> 
+
+                                                                           <div id="huodong" class="m-item">
+                                                                               <h2><img src="img/t_huodong.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">常规玩法：</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/2014/7/30/5032_452705.html" class="" target="_blank">天罡星</a>
+| <a href="http://xyq.163.com/introduce/cg001.html" class="" target="_blank">小龟快跑</a>
+| <a href="http://xyq.163.com/introduce/cg002.html" class="" target="_blank">挖宝封妖</a>
+| <a href="http://xyq.163.com/introduce/cg003.html" class="" target="_blank">二十八星宿</a>
+| <a href="http://xyq.163.com/introduce/2012/3/16/5032_266725.html" class="" target="_blank">地煞星</a>
+| <a href="http://xyq.163.com/introduce/cg008.html" class="" target="_blank">卡牌风云赛</a>
+| <a href="http://xyq.163.com/introduce/cg007.html" class="" target="_blank">幻境寻宝</a>
+| <a href="http://xyq.163.com/introduce/cg006.html" class="" target="_blank">群雄逐鹿</a>
+| <a href="http://xyq.163.com/introduce/cg010.html" class="" target="_blank">生死劫</a>
+| <a href="http://xyq.163.com/introduce/cg011.html" class="" target="_blank">摇钱树</a>
+| <a href="http://xyq.163.com/introduce/cg012.html" class="" target="_blank">五行修业</a>
+| <a href="http://xyq.163.com/introduce/cg013.html" class="" target="_blank">兜售烟花的兔子</a>
+| <a href="http://xyq.163.com/introduce/cg015.html" class="" target="_blank">擂台新玩法</a>
+| <a href="http://xyq.163.com/introduce/cg014.html" class="" target="_blank">钓鱼大赛</a>
+| <a href="http://xyq.163.com/2007/bz/maze02.html" class="" target="_blank">帮派迷宫建设</a>
+| <a href="http://xyq.163.com/introduce/cg017.html" class="" target="_blank">求签祈福</a>
+| <a href="http://xyq.163.com/introduce/cg019.html" class="" target="_blank">烟花占卜师</a>
+| <a href="http://xyq.163.com/introduce/cg020.html" class="" target="_blank">乾坤盘对抗大赛</a>
+| <a href="http://xyq.163.com/introduce/cg016.html" class="" target="_blank">梦幻帮派联赛</a>
+| <a href="http://xyq.163.com/introduce/cg022.html" class="" target="_blank">天下美食</a>
+| <a href="http://xyq.163.com/introduce/2012/6/11/5032_331239.html" class="" target="_blank">皇宫飞贼</a>
+| <a href="http://xyq.163.com/introduce/2012/8/27/5032_340381.html" class="" target="_blank">妙手仁心</a>
+| <a href="http://xyq.163.com/introduce/2012/10/15/5032_346161.html" class="" target="_blank">春色满园</a>
+| <a href="http://xyq.163.com/introduce/2012/7/2/5032_333531.html" class="" target="_blank">异域欢歌</a>
+| <a href="http://xyq.163.com/introduce/2012/10/26/5032_347837.html" class="" target="_blank">巧诱妖灵</a>
+| <a href="http://xyq.163.com/introduce/2012/10/29/5032_347957.html" class="" target="_blank">天籁之音</a>
+| <a href="http://xyq.163.com/introduce/2013/1/11/5032_357133.html" class="" target="_blank">妙法慧心</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">周末玩法：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/zm001.html" class="" target="_blank">门派闯关</a>
+| <a href="http://xyq.163.com/introduce/zm002.html" class="" target="_blank">科举大赛</a>
+| <a href="http://xyq.163.com/introduce/zm007.html" class="" target="_blank">彩虹争霸赛</a>
+| <a href="http://xyq.163.com/introduce/zm004.html" class="" target="_blank">英雄大会</a>
+| <a href="http://xyq.163.com/introduce/zm005.html" class="" target="_blank">长安保卫战</a>
+| <a href="http://xyq.163.com/introduce/cg018.html" class="" target="_blank">决战华山</a>
+| <a href="http://xyq.163.com/introduce/2012/6/4/5033_330599.html" class="" target="_blank">寻梦追忆</a>
+| <a href="http://xyq.163.com/introduce/zm008.html" class="" target="_blank">文韵墨香</a>
+| <a href="http://xyq.163.com/introduce/cg005.html" class="" target="_blank">降妖伏魔</a>
+| <a href="http://xyq.163.com/introduce/2013/1/10/5033_348617.html" class="" target="_blank">慈心渡鬼</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">突发事件：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/tf002.html" class="" target="_blank">师门守卫</a>
+| <a href="http://xyq.163.com/introduce/tf003.html" class="" target="_blank">帮派强盗</a>
+| <a href="http://xyq.163.com/introduce/tf004.html" class="" target="_blank">三界悬赏</a>
+| <a href="http://xyq.163.com/introduce/2012/12/3/5034_351943.html" class="" target="_blank">封印破碎</a>
+| <a href="http://xyq.163.com/introduce/2013/7/24/5034_383977.html" class="" target="_blank">剑陵魔影</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">休闲玩法：</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/2014/10/11/5035_469099.html" class="" target="_blank">自动换装</a>
+| <a href="http://xyq.163.com/introduce/2014/5/12/5035_438371.html" class="" target="_blank">祝福竞猜</a>
+| <a href="http://xyq.163.com/introduce/2013/9/12/5035_393335.html" class="" target="_blank">钓鱼玩法</a>
+| <a href="http://xyq.163.com/introduce/2013/8/1/5035_385691.html" class="" target="_blank">梦幻大富翁竞赛</a>
+| <a href="http://xyq.163.com/introduce/2013/5/27/5035_374319.html" class="" target="_blank">梦幻云音乐</a>
+| <a href="http://xyq.163.com/introduce/2013/5/23/5035_373919.html" class="" target="_blank">梦幻大富翁</a>
+| <a href="http://xyq.163.com/introduce/xx002.html" class="" target="_blank">梦幻卡牌</a>
+| <a href="http://xyq.163.com/introduce/xx003.html" class="" target="_blank">五子棋</a>
+| <a href="http://xyq.163.com/introduce/xx004.html" class="" target="_blank">诗中仙</a>
+| <a href="http://xyq.163.com/introduce/2013/1/10/5035_356781.html" class="" target="_blank">术中仙</a>
+| <a href="http://xyq.163.com/introduce/xx005.html" class="" target="_blank">本事和尚</a>
+| <a href="http://xyq.163.com/introduce/xx006.html" class="" target="_blank">八卦炼丹炉</a>
+| <a href="http://xyq.163.com/introduce/xx007.html" class="" target="_blank">社区活动</a>
+| <a href="http://xyq.163.com/introduce/xx008.html" class="" target="_blank">文学课</a>
+| <a href="http://xyq.163.com/introduce/xx010.html" class="" target="_blank">报纸杂志</a>
+| <a href="http://xyq.163.com/introduce/xx011.html" class="" target="_blank">菜园子</a>
+| <a href="http://xyq.163.com/introduce/xx012.html" class="" target="_blank">梦幻乾坤盘</a>
+| <a href="http://xyq.163.com/introduce/xx013.html" class="" target="_blank">小游戏平台</a>
+| <a href="http://xyq.163.com/introduce/xx014.html" class="" target="_blank">墨家数独牌</a>
+| <a href="http://xyq.163.com/introduce/xx015.html" class="" target="_blank">考古鉴赏</a>
+| <a href="http://xyq.163.com/introduce/xx016.html" class="" target="_blank">翰墨丹青</a>
+| <a href="http://xyq.163.com/introduce/2011/12/9/5035_258183.html" class="" target="_blank">百变幻卡</a>
+| <a href="http://xyq.163.com/introduce/2012/10/19/5035_257501.html" class="" target="_blank">梦幻攻防战</a>
+| <a href="http://xyq.163.com/introduce/cg019.html" class="" target="_blank">烟花占卜师</a>
+| <a href="http://xyq.163.com/introduce/cg011.html" class="" target="_blank">摇钱树</a>
+| <a href="http://xyq.163.com/introduce/xx018.html" class="" target="_blank">三界洞天</a>
+| <a href="http://xyq.163.com/introduce/xx017.html" class="" target="_blank">三界杀</a>
+| <a href="http://xyq.163.com/introduce/2013/2/25/5035_361981.html" class="" target="_blank">梦幻祝福</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                             </div>
+                                                                           </div>
+
+                                                                           <div id="xinxi" class="m-item">
+                                                                               <h2><img src="img/t_xinxi.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">常用信息：</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/cy001.html" class="" target="_blank">传送点坐标</a>
+| <a href="http://xyq.163.com/introduce/cy012.html" class="" target="_blank">npc合集</a>
+| <a href="http://xyq.163.com/introduce/cy003.html" class="" target="_blank">各地商店</a>
+| <a href="http://xyq.163.com/introduce/cy004.html" class="" target="_blank">人物练级地点</a>
+| <a href="http://xyq.163.com/introduce/cy005.html" class="" target="_blank">打传说地点</a>
+| <a href="http://xyq.163.com/introduce/cy006.html" class="" target="_blank">节日奖励</a>
+| <a href="http://xyq.163.com/introduce/cy007.html" class="" target="_blank">计算公式</a>
+| <a href="http://xyq.163.com/introduce/cy008.html" class="" target="_blank">宝宝练级地点</a>
+| <a href="http://xyq.163.com/introduce/cy009.html" class="" target="_blank">家具配方</a>
+| <a href="http://xyq.163.com/introduce/cy011.html" class="" target="_blank">三界功绩</a>
+| <a href="http://xyq.163.com/introduce/cy002.html" class="" target="_blank">好友推荐</a>
+| <a href="http://xyq.163.com/introduce/cy013.html" class="" target="_blank">售卡积分</a>
+| <a href="http://xyq.163.com/introduce/cy014.html" class="" target="_blank">防沉迷介绍</a>
+| <a href="http://xyq.163.com/introduce/cy015.html" class="" target="_blank">股票聊天室</a>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                           </div>  
+                                                                           </div>   
+
+                                                                           <div id="gongju" class="m-item">
+                                                                               <h2><img src="img/t_gongju.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">工具：</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/2014/8/11/5014_455903.html" class="" target="_blank">锁系统介绍</a>
+| <a href="http://xyq.163.com/introduce/2014/5/29/5014_442151.html" class="" target="_blank">角色造型和门派转换</a>
+| <a href="http://xyq.163.com/introduce/2013/8/29/5014_390543.html" class="" target="_blank">靓号系统</a>
+| <a href="http://xyq.163.com/introduce/2013/5/20/5014_373173.html" class="" target="_blank">多标签客户端</a>
+| <a href="http://xyq.163.com/introduce/2013/4/8/5014_367335.html" class="" target="_blank">月卡与超值年卡说明</a>
+| <a href="http://mvip.163.com/tqzq/xyq.html" class="" target="_blank">手机验证特权</a>
+| <a href="http://xyq.163.com/introduce/fz001.html" class="" target="_blank">梦幻精灵</a>
+| <a href="http://xyq.163.com/introduce/2012/6/13/5014_331483.html" class="" target="_blank">内嵌论坛</a>
+| <a href="http://sms.nie.163.com/" class="" target="_blank">梦幻手机版</a>
+| <a href="http://xyq.163.com/introduce/fz018.html" class="" target="_blank">点卡交易说明</a>
+| <a href="http://xyq.163.com/introduce/fz020.html" class="" target="_blank">时间锁</a>
+| <a href="http://xyq.163.com/introduce/fz005.html" class="" target="_blank">团队契约</a>
+| <a href="http://xyq.163.com/introduce/fz006.html" class="" target="_blank">保险加锁</a>
+| <a href="http://xyq.163.com/introduce/2012/11/26/5014_351125.html" class="" target="_blank">千里传音</a>
+| <a href="http://xyq.163.com/introduce/2012/10/29/5014_347953.html" class="" target="_blank">兵器谱</a>
+| <a href="http://xyq.163.com/introduce/2012/10/25/5014_347741.html" class="" target="_blank">梦游志</a>
+| <a href="http://xyq.163.com/introduce/2012/2/6/5014_262875.html" class="" target="_blank">炼兽笼</a>
+| <a href="http://xyq.163.com/introduce/fz026.html" class="" target="_blank">频道信息收集</a>
+| <a href="http://xyq.163.com/introduce/fz024.html" class="" target="_blank">手机将军令介绍</a>
+| <a href="http://xyq.163.com/2011/zhuanyi/fq.html" class="" target="_blank">角色转移相关FAQ</a>
+| <a href="http://xyq.163.com/2011/zhuanyi/shijiansuo.html" class="" target="_blank">转服时间锁</a>
+| <a href="http://xyq.163.com/introduce/2011/1/7/5014_229808.html" class="" target="_blank">梦幻西游答题器</a>
+| <a href="http://xyq.163.com/introduce/fz022.html" class="" target="_blank">高价值流转频率控制</a>
+| <a href="http://xyq.163.com/introduce/fz019.html" class="" target="_blank">密保锁</a>
+| <a href="http://xyq.163.com/introduce/fz017.html" class="" target="_blank">暂离保护</a>
+| <a href="http://xyq.163.com/introduce/2009/5/26/5014_200871.html" class="" target="_blank">《梦幻西游》股票系统手册</a>
+| <a href="http://xyq.163.com/introduce/fz014.html" class="" target="_blank">梦幻知道(内嵌）</a>
+| <a href="http://xyq.163.com/introduce/fz015.html" class="" target="_blank">玩家改名</a>
+| <a href="http://xyq.163.com/introduce/fz021.html" class="" target="_blank">离线交易保护</a>
+| <a href="http://xyq.163.com/introduce/fz013.html" class="" target="_blank">角色交易</a>
+| <a href="http://xyq.163.com/introduce/fz008.html" class="" target="_blank">梦幻密保</a>
+| <a href="http://xyq.163.com/introduce/fz011.html" class="" target="_blank">外挂举报系统</a>
+| <a href="http://xyq.163.com/introduce/fz012.html" class="" target="_blank">金银锁</a>
+| <a href="http://xyq.163.com/introduce/fz010.html" class="" target="_blank">租借仓库</a>
+| <a href="http://xyq.163.com/introduce/fz009.html" class="" target="_blank">小号绑定</a>
+| <a href="http://xyq.163.com/introduce/fz007.html" class="" target="_blank">将军令</a>
+| <a href="http://xyq.163.com/2013/3/11/4999_363715.html" class="" target="_blank">点卡公证</a>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                             </div>
+                                                                       </div>
+
+                                                                           <div id="daoju" class="m-item">
+                                                                               <h2><img src="img/t_daoju.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">道具装备：</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/2014/7/18/5015_451167.html" class="" target="_blank">行囊扩展</a>
+| <a href="http://xyq.163.com/introduce/2014/6/11/5015_444423.html" class="" target="_blank">光武拓印</a>
+| <a href="http://xyq.163.com/introduce/2013/3/25/5015_365533.html" class="" target="_blank">召唤兽多套装备栏</a>
+| <a href="http://xyq.163.com/introduce/dj001.html" class="" target="_blank">物品概述</a>
+| <a href="http://xyq.163.com/introduce/dj002.html" class="" target="_blank">药品</a>
+| <a href="http://xyq.163.com/introduce/dj003.html" class="" target="_blank">食物</a>
+| <a href="http://xyq.163.com/introduce/2013/2/18/5015_361211.html" class="" target="_blank">秘传烹饪</a>
+| <a href="http://xyq.163.com/introduce/dj004.html" class="" target="_blank">武器</a>
+| <a href="http://xyq.163.com/introduce/dj005.html" class="" target="_blank">防具</a>
+| <a href="http://xyq.163.com/introduce/2014/11/6/5015_474275.html" class="" target="_blank">灵饰</a>
+| <a href="http://xyq.163.com/introduce/dj006.html" class="" target="_blank">剧情道具</a>
+| <a href="http://xyq.163.com/introduce/dj007.html" class="" target="_blank">儿童用品</a>
+| <a href="http://xyq.163.com/introduce/dj008.html" class="" target="_blank">宝石</a>
+| <a href="http://xyq.163.com/introduce/dj009.html" class="" target="_blank">法宝</a>
+| <a href="http://xyq.163.com/introduce/dj010.html" class="" target="_blank">暗器</a>
+| <a href="http://xyq.163.com/introduce/dj011.html" class="" target="_blank">魔兽要诀</a>
+| <a href="http://xyq.163.com/introduce/dj012.html" class="" target="_blank">套装</a>
+| <a href="http://xyq.163.com/introduce/2013/1/28/5015_359141.html" class="" target="_blank">乾坤石</a>
+| <a href="http://xyq.163.com/introduce/dj013.html" class="" target="_blank">帮派商品</a>
+| <a href="http://xyq.163.com/introduce/dj014.html" class="" target="_blank">渔类道具</a>
+| <a href="http://xyq.163.com/introduce/dj015.html" class="" target="_blank">召唤兽装备</a>
+| <a href="http://xyq.163.com/introduce/dj016.html" class="" target="_blank">变身卡</a>
+| <a href="http://xyq.163.com/introduce/dj017.html" class="" target="_blank">杂物</a>
+| <a href="http://xyq.163.com/introduce/dj018.html" class="" target="_blank">植物种子</a>
+| <a href="http://xyq.163.com/introduce/dj019.html" class="" target="_blank">家具</a>
+| <a href="http://xyq.163.com/introduce/dj020.html" class="" target="_blank">符石</a>
+| <a href="http://xyq.163.com/introduce/dj021.html" class="" target="_blank">灵石</a>
+| <a href="http://xyq.163.com/introduce/dj022.html" class="" target="_blank">钨金</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                            </div>
+                                                                           </div> 
+
+                                                                           <div id="jineng" class="m-item">
+                                                                               <h2><img src="img/t_jineng.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">技能相关</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/mp001.html" class="" target="_blank">门派技能</a>
+| <a href="http://xyq.163.com/introduce/jn001.html" class="" target="_blank">生活技能</a>
+| <a href="http://xyq.163.com/introduce/jn002.html" class="" target="_blank">装备特技</a>
+| <a href="http://xyq.163.com/introduce/jn003.html" class="" target="_blank">烹饪</a>
+| <a href="http://xyq.163.com/introduce/jn004.html" class="" target="_blank">炼药</a>
+| <a href="http://xyq.163.com/introduce/jn005.html" class="" target="_blank">打造、缝纫与炼金</a>
+| <a href="http://xyq.163.com/introduce/jn006.html" class="" target="_blank">剧情技能</a>
+| <a href="http://xyq.163.com/introduce/jn007.html" class="" target="_blank">夫妻技能</a>
+| <a href="http://xyq.163.com/introduce/jn008.html" class="" target="_blank">宝石合成</a>
+| <a href="http://xyq.163.com/introduce/jn009.html" class="" target="_blank">暗器合成</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                            </div>
+                                                                           </div>
+
+                                                                           <div id="zhandou" class="m-item">
+                                                                               <h2><img src="img/t_zhandou.gif"></h2>
+                                                                                <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                        <tr>
+                                                                                           <td class="t-d">战斗综合</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/zd001.html" class="" target="_blank">战斗规则</a>
+| <a href="http://xyq.163.com/introduce/zd002.html" class="" target="_blank">擂台切磋</a>
+| <a href="http://xyq.163.com/introduce/zd003.html" class="" target="_blank">监狱介绍</a>
+| <a href="http://xyq.163.com/introduce/zd004.html" class="" target="_blank">关于五行</a>
+| <a href="http://xyq.163.com/introduce/zd005.html" class="" target="_blank">关于PK</a>
+| <a href="http://xyq.163.com/introduce/zd006.html" class="" target="_blank">关于阵法</a>
+| <a href="http://xyq.163.com/introduce/zd007.html" class="" target="_blank">组队战斗</a>
+| <a href="http://xyq.163.com/introduce/zd008.html" class="" target="_blank">人物修炼</a>
+| <a href="http://xyq.163.com/introduce/zd009.html" class="" target="_blank">角色飞升</a>
+| <a href="http://xyq.163.com/introduce/zd010.html" class="" target="_blank">潜能果</a>
+| <a href="http://xyq.163.com/introduce/zd011.html" class="" target="_blank">双倍与精修时间奖励</a>
+| <a href="http://xyq.163.com/introduce/zd012.html" class="" target="_blank">指挥系统</a>
+| <a href="http://xyq.163.com/introduce/zd014.html" class="" target="_blank">决斗系统</a>
+| <a href="http://xyq.163.com/introduce/zd013.html" class="" target="_blank">擂台争霸赛</a>
+| <a href="http://xyq.163.com/introduce/2011/11/28/5017_256839.html" class="" target="_blank">战斗内人物状态查看</a>
+                                                                                           </td>
+                                                                                       </tr>                                    
+                                                                                   </tbody>
+                                                                               </table>
+                                                                            </div>
+                                                                           </div>        
+
+                                                                           <div id="zhaohuan" class="m-item">
+                                                                               <h2><img src="img/t_zhaohuan.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                      <tr>
+                                                                                           <td class="t-d">召唤兽相关</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/2014/9/5/5018_461661.html" class="" target="_blank">召唤兽栏扩充</a>
+| <a href="http://xyq.163.com/introduce/2014/4/28/5018_436035.html" class="" target="_blank">幻色丹</a>
+| <a href="http://xyq.163.com/introduce/zhs001.html" class="" target="_blank">宠物与召唤兽</a>
+| <a href="http://xyq.163.com/introduce/zhs002.html" class="" target="_blank">出现场景</a>
+| <a href="http://xyq.163.com/introduce/zhs003.html" class="" target="_blank">携带等级</a>
+| <a href="http://xyq.163.com/introduce/zhs004.html" class="" target="_blank">变异召唤兽</a>
+| <a href="http://xyq.163.com/introduce/zhs005.html" class="" target="_blank">召唤兽宝宝</a>
+| <a href="http://xyq.163.com/introduce/zhs006.html" class="" target="_blank">召唤兽资质、技能、成长</a>
+| <a href="http://xyq.163.com/introduce/zhs007.html" class="" target="_blank">炼妖打书</a>
+| <a href="http://xyq.163.com/introduce/zhs008.html" class="" target="_blank">法术召唤兽认证</a>
+| <a href="http://xyq.163.com/introduce/zhs009.html" class="" target="_blank">神兽介绍</a>
+| <a href="http://xyq.163.com/introduce/zhs010.html" class="" target="_blank">召唤兽修炼</a>
+| <a href="http://xyq.163.com/2011/csrh/shipin.html" class="" target="_blank">召唤兽饰品</a>
+                                                                                            </td>
+                                                                                       </tr> 
+                                                                                   </tbody>
+                                                                               </table>
+                                                                            </div>
+                                                                           </div>
+
+                                                                           <div id="renwu" class="m-item">
+                                                                               <h2><img src="img/t_renwu.gif"></h2>
+                                                                               <div class="m-d">
+                                                                               <table>
+                                                                                   <tbody>
+                                                                                       <tr>
+                                                                                           <td class="t-d">常规任务</td>
+                                                                                           <td >
+| <a href="http://xyq.163.com/introduce/task/2013/6/14/5036_377167.html" class="" target="_blank">龙宫夺宝</a>
+| <a href="http://xyq.163.com/introduce/task/cg001_2.html" class="" target="_blank">新手任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg002.html" class="" target="_blank">师门任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg003.html" class="" target="_blank">押镖任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg004.html" class="" target="_blank">捉鬼任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg005.html" class="" target="_blank">官职任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg006.html" class="" target="_blank">种族任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg007.html" class="" target="_blank">任务链</a>
+| <a href="http://xyq.163.com/introduce/task/cg008.html" class="" target="_blank">百晓任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg009.html" class="" target="_blank">强盗宝图任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg010.html" class="" target="_blank">植物种子任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg011.html" class="" target="_blank">飘香香任务</a>
+| <a href="http://xyq.163.com/introduce/task/cg012.html" class="" target="_blank">五行修业</a>
+| <a href="http://xyq.163.com/introduce/task/2013/2/18/5036_361207.html" class="" target="_blank">初出江湖</a>
+| <a href="http://xyq.163.com/introduce/task/cg015.html" class="" target="_blank">神器任务</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">帮派任务</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/task/bp001.html" class="" target="_blank">青龙堂任务</a>
+| <a href="http://xyq.163.com/introduce/task/bp002.html" class="" target="_blank">白虎堂任务</a>
+| <a href="http://xyq.163.com/introduce/task/bp003.html" class="" target="_blank">朱雀堂任务</a>
+| <a href="http://xyq.163.com/introduce/task/bp004.html" class="" target="_blank">玄武堂任务</a>
+| <a href="http://xyq.163.com/introduce/task/2013/10/21/5037_399505.html" class="" target="_blank">百草谷任务</a>
+| <a href="http://xyq.163.com/introduce/task/bp005.html" class="" target="_blank">帮派迷宫建设</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">剧情任务</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382733.html" class="" target="_blank">商人的鬼魂</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382723.html" class="" target="_blank">玄奘的身世</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382699.html" class="" target="_blank">寻找四琉璃</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382695.html" class="" target="_blank">大战心魔</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382691.html" class="" target="_blank">含冤小白龙</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382689.html" class="" target="_blank">八戒悟空</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382671.html" class="" target="_blank">三打白骨精</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382635.html" class="" target="_blank">真假美猴王</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382633.html" class="" target="_blank">智取芭蕉扇</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382603.html" class="" target="_blank">小雷音寺</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382595.html" class="" target="_blank">无名鬼城</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382587.html" class="" target="_blank">女娲神迹</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/18/5038_382583.html" class="" target="_blank">问药朱紫国</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382569.html" class="" target="_blank">蓬莱仙岛</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382565.html" class="" target="_blank">墨家村</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382563.html" class="" target="_blank">西梁女国</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382561.html" class="" target="_blank">盘丝岭</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382559.html" class="" target="_blank">狮驼岭</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382553.html" class="" target="_blank">宝象国</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382547.html" class="" target="_blank">比丘国</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382487.html" class="" target="_blank">建邺城探案</a>
+| <a href="http://xyq.163.com/introduce/task/2013/7/17/5038_382447.html" class="" target="_blank">西梁女国·浮生曲</a>
+                                                                                           </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                           <td class="t-d">副本任务</td>
+                                                                                           <td>
+| <a href="http://xyq.163.com/2007/bz/dungeon25.html" class="" target="_blank">石猴授徒</a>
+| <a href="http://xyq.163.com/2007/bz/tth.html" class="" target="_blank">通天河</a>
+| <a href="http://xyq.163.com/introduce/fb/fb001.html" class="" target="_blank">四门绝阵</a>
+| <a href="http://xyq.163.com/introduce/fb/fb002.html" class="" target="_blank">上古秘宝</a>
+| <a href="http://xyq.163.com/introduce/fb/fb003.html" class="" target="_blank">前世今生2</a>
+| <a href="http://xyq.163.com/introduce/fb/fb004.html" class="" target="_blank">泾河龙王2</a>
+| <a href="http://xyq.163.com/introduce/fb/fb005.html" class="" target="_blank">天火之殇</a>
+| <a href="http://xyq.163.com/introduce/fb/fb006.html" class="" target="_blank">大闹天宫</a>
+| <a href="http://xyq.163.com/introduce/fb/fb007.html" class="" target="_blank">乌鸡国</a>
+| <a href="http://xyq.163.com/introduce/fb/fb008.html" class="" target="_blank">水陆大会</a>
+| <a href="http://xyq.163.com/introduce/fb/fb009.html" class="" target="_blank">车迟斗法</a>
+| <a href="http://xyq.163.com/introduce/fb/fb010.html" class="" target="_blank">五庄观</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon13.html" class="" target="_blank">平顶山</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon14.html" class="" target="_blank">四季</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon15.html" class="" target="_blank">七绝山</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon17.html" class="" target="_blank">（侠）水陆大会</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon18.html" class="" target="_blank">黑风山</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon24.html" class="" target="_blank">胡姬琵琶行</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon19.html" class="" target="_blank">红孩儿</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon20.html" class="" target="_blank">无底洞</a>
+| <a href="http://xyq.163.com/2007/bz/dungeon21.html" class="" target="_blank">秘境降妖</a>
+                                                                                            </td>
+                                                                                       </tr>
+                                                                                   </tbody>
+                                                                               </table>
+                                                                           </div >
+                                                                           </div>
+                                                                 </div>
+    					</div>
+    					<div id="footer">
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	
+    </div>  
+</body>
+</html>
