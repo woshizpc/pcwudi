@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金山影视</title>
+    <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #bg{
+       width: 1349px;
+       height: 330px;
+       background-color: gray;    
+    }
+    #wrap{
+        width: 980px;
+        height: 330px;
+        position: absolute;
+        left: 184.5px;
+        top: 0;
+    }
+    li {
+      list-style:none ;
+    }
+    #content{
+      
+    }
+    #navigation{
+      position: absolute;
+      top: 278px;
+      left:267px; 
+
+    }
+    #navigation ul{
+      width: 455px;     
+    }
+    #navigation li{
+      float: left;
+      border:2px;
+      padding: 1px 0 0 ;
+    }
+    #left{
+        position: absolute;
+        left: 0;
+        top: 145px;
+    }
+    #right{
+        position: absolute;
+        right: 0;
+        top: 145px;
+    }
+    </style>
+</head>
+    <body>
+    	<div id="bg">
+            <div id="wrap" onmouseover="autostop()" onmouseout="autostart()">
+                <div id="content">
+                    <ul>
+                        <li><img src="img/img1.jpg"></li>
+                        <li><img src="img/img2.jpg"></li>
+                        <li><img src="img/img3.jpg"></li>
+                        <li><img src="img/img4.jpg"></li>
+                        <li><img src="img/img5.jpg"></li>
+                    </ul>
+                </div>
+                <div id="navigation" >
+                    <ul>
+                        <li><img src="img/nav1.jpg"></li>
+                        <li><img src="img/nav2.jpg"></li>
+                        <li><img src="img/nav3.jpg"></li>
+                        <li><img src="img/nav4.jpg"></li>
+                        <li><img src="img/nav5.jpg"></li>
+                    </ul>
+                </div>
+                <div id="arr">
+                    <span id="left" onmousedown="left()" ><img src="img/left1.png"></span>
+                    <span id="right" onmousedown="right()"><img src="img/right1.png"></span>
+                 </div>
+            </div>  
+        </div>
+    <script type="text/javascript">
+    var nav=document.getElementById("navigation").getElementsByTagName("li");
+    var cont=document.getElementById("content").getElementsByTagName("li");
+    var flow; 
+    var index=-1;
+    var mOver=function(){
+        document.getElementById('arr').style.display="block";
+        }
+    var mOut=function(){
+        document.getElementById('arr').style.display="none";
+        }
+    var move =function(flag){
+        if(!flag){
+            index++;
+            if(index>=nav.length){index=0;}
+        }
+        else{
+            index--;
+            if(index<0){index=nav.length-1}
+        }
+        for(var i=0;i<nav.length;i++){
+            cont[i].style.display='none';
+            nav[i].style.border="none"
+        }
+        cont[index].style.display='block';
+        nav[index].style.border="solid white";
+    }
+    move(false); 
+    var autostart=function(){
+     flow=setInterval(function(){move(false);},2000);
+     mOut();
+    }
+    autostart();
+    var right=function(){
+        move(false)
+    }
+    var left=function(){
+        move(true)
+    }
+    
+    var autostop=function(){
+        clearInterval(flow);
+        mOver();
+    }
+for(var i=0;i<nav.length;i++)
+{
+    nav[i].id=i;
+    nav[i].onmouseover=function(){
+        for(var n=0;n<nav.length;n++)
+            if(this.id==nav[n].id)
+            {
+                index=n-1;
+                break;
+            }
+            move(false);
+    }
+}
+    </script>  
+    </body>
+</html>		
